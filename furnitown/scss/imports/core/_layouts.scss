@@ -65,6 +65,14 @@ body {
         width: 100%;
         margin: auto;
         @include visible;
+        @include transform(scaleX(1));
+        @include transform-origin(right center);
+        @include transition($t $cubic);
+        &.--scaleX {
+            @include transform(scaleX(0.75));
+            @include transform-origin(right center);
+            @include transition($t $cubic);
+        }
     }
     @include lg {
         // CSS responsive large desktop

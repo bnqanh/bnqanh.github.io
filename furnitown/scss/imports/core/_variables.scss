@@ -59,7 +59,8 @@ $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
         // Tablet
         --gap: 2rem;
 
-        --height-header: 11rem;
+        //--height-header: 11rem;
+        --height-header: 8.6rem;
         --height-button: 5.8rem;
     }
     @media (max-width: $xxs-max) {

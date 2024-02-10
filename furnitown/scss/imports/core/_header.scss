@@ -289,7 +289,9 @@
         }
         &__menu {
             width: 100vw;
+            height:  calc(100vh - var(--height-header));
             margin-top: var(--height-header);
+            overflow: scroll;
             &-button {
                 display: none;
             }

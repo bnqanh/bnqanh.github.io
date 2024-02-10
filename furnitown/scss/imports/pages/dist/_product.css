@@ -1,0 +1,16 @@
+.product_page .hero__background {
+  position: relative;
+  width: 100%;
+  max-height: 45rem;
+  overflow: hidden;
+}
+
+.product_page .product {
+  padding-block: 3.5rem 5.4rem;
+}
+
+.product_page .footer {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=_product.css.map */

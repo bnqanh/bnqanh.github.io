@@ -1,0 +1,12 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.header__top {
+  padding-block: 5.4rem;
+}
+
+/*# sourceMappingURL=_header.css.map */
