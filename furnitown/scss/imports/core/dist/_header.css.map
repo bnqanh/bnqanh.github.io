@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["_header.scss"],"sourcesContent":["// css header\r\n.header{\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: var(--z-fixed);\r\n    &__top{\r\n        padding-block: 5.4rem;\r\n        &-link{\r\n            &.--arrow{\r\n\r\n            }\r\n        }\r\n    }\r\n}\r\n"],"file":"_header.css"}
