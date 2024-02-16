@@ -87,6 +87,7 @@
             background-color: var(--title-cl);
             box-shadow: 1rem 1rem 5rem hsla(40, 24%, 24%, 0.5);
             @include transition($t $cubic);
+            pointer-events: none;
         }
         &::before {
             top: 0;
