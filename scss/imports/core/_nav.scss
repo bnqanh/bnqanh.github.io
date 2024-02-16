@@ -1,0 +1,96 @@
+.nav {
+    height: var(--height-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--title-cl);
+    @include transition($t $cubic);
+    &__logo {
+        font-family: mssb;
+        color: var(--title-cl);
+        @include transition($t $cubic);
+    }
+    &__change {
+        &-icon {
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+            overflow: hidden;
+            @include transition($t $cubic);
+            svg {
+                @include midimg(100%);
+                path {
+                    fill: var(--text-cl);
+                }
+            }
+            .sun {
+                @include visible(0);
+            }
+            .moon {
+                @include visible(1);
+            }
+        }
+        &.--dark {
+            .sun {
+                @include visible(1);
+            }
+            .moon {
+                @include visible(0);
+            }
+        }
+    }
+    &__menu {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 0;
+        right: 0;
+        background-color: var(--container-cl);
+        box-shadow: 0 0.4rem 2.4rem hsla(40, 48%, 4%, 0.25);
+        border-radius: 0.5rem;
+        padding: 1.25rem 3rem;
+        @include visible(0);
+        @include transition($t $cubic);
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            .item {
+                &__link {
+                    position: relative;
+                    font-size: 1.25rem;
+                    color: var(--title-cl);
+                    @include transition($t $cubic);
+                    &-icon {
+                        width: 2rem;
+                        height: 2rem;
+                        path {
+                            fill: var(--text-cl);
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 3.2rem;
+                        height: 2px;
+                        background-color: var(--title-cl);
+                        left: -0.6rem;
+                        bottom: -0.8rem;
+                        @include visible(0);
+                        @include transition($t $cubic);
+                    }
+                    &:hover,
+                    &.active-link {
+                        &::after {
+                            @include visible(1);
+                            @include transform(translateY(-0.4rem));
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include sm {
+        &__menu {
+            @include visible(1);
+        }
+    }
+}

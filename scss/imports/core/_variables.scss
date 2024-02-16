@@ -1,7 +1,7 @@
 //======================================================BOXED LAYOUT=======================================================
 
 $container-max-width: 100%;
-$container-width: 101rem; // tùy thuộc vào container của bản thiết kế // $container-width = container (đo từ bản thiết kế) + 30px
+$container-width: 105.4rem; // tùy thuộc vào container của bản thiết kế // $container-width = container (đo từ bản thiết kế) + 30px
 
 /*GRID - media queries breakpoints*/
 $xxs-min: 36em; //576px; // CÓ THỂ TÙY CHỈNH
@@ -22,7 +22,10 @@ $white-cl: #fff;
 $black-cl: #000;
 $red-cl: #d81f1f;
 $blue-cl: #00afab;
-
+$title-cl: hsl(40, 48%, 12%);
+$text-cl: hsl(40, 24%, 24%);
+$body-cl: hsl(40, 4%, 88%);
+$container-cl: hsl(40, 48%, 88%);
 $gradient-cl: linear-gradient(180deg, #df1cff 0%, #814bf6 50.55%, #00bcff 100%);
 
 // timing transition - tuỳ chỉnh
@@ -33,32 +36,32 @@ $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
 
 :root {
     //=========== VÍ DỤ ============//
-
+    // colors - tuỳ chỉnh
+    --title-cl: hsl(40, 48%, 12%);
+    --text-cl: hsl(40, 24%, 24%);
+    --body-cl: hsl(40, 4%, 88%);
+    --container-cl: hsl(40, 48%, 88%);
     // font-size & line-height heading
 
-    --h1-fs: 7.2rem;
-    --h1-lh: 8rem;
+    --biggest-fs: 3.2rem;
+    --biggest-lh: 6rem;
+    --h2-fs: 2.4rem;
+    --h2-lh: 4rem;
+    --normal-fs: 1.4rem;
+    --normal-lh: 2rem;
 
-    --h2-fs: 5.2rem;
-    --h2-lh: 6rem;
-
-    --h3-fs: 3.2rem;
-    --h3-lh: 4.2rem;
-
-    --h4-fs: 2.4rem;
-    --h4-lh: 3.2rem;
-
+    --small-fs: 1.2rem;
+    --small-lh: 2rem;
     // Genaral Variable
 
     --gap: 3rem; // gap này sử dụng cho gap cột & padding của container, container-fluid
 
-    --height-header: 14rem;
+    --height-header: 3.5rem;
     --z-fixed: 100;
     --z-tooltip: 10;
 
     @media (max-width: $sm-max) {
         // Tablet
-        --height-header: 6rem;
     }
     @media (max-width: $xs-max) {
         // Mobile

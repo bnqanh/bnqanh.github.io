@@ -1,0 +1,17 @@
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__wrapper-left .list {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__wrapper-left .list__item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/*# sourceMappingURL=_footer.css.map */

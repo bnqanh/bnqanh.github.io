@@ -1,0 +1,1 @@
+{"version":3,"sources":["_nav.scss"],"names":[],"mappings":"AAAA,KACE,OAAQ,qBACR,QAAS,KACT,gBAAiB,cACjB,YAAa,OACb,cAAe,IAAI","file":"_nav.min.css","sourcesContent":[".nav{\r\n    height: var(--height-header);\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    border-bottom: 2px solid ;\r\n}"]}

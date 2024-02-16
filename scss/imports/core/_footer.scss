@@ -1,0 +1,120 @@
+.footer {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem 2rem;
+        @include text(var(--small-fs), msr, var(--small-lh), var(--text-cl), none);
+        letter-spacing: 0;
+        @include transition($t $cubic);
+        &-left {
+            .list {
+                display: grid;
+                gap: 1rem;
+                &__item {
+                    display: flex;
+                    gap: 1rem;
+                    &-title {
+                        font-family: mssb;
+                        text-transform: capitalize;
+                        letter-spacing: 0.4px;
+                    }
+                }
+            }
+        }
+        &-right {
+            .form {
+                position: relative;
+                display: grid;
+                gap: 3rem;
+                grid-template-columns: repeat(2, 1fr);
+                padding-block: 2rem 4rem;
+                &__box {
+                    display: grid;
+                    gap: 1rem;
+                    .label {
+                        font-family: mssb;
+                        text-transform: capitalize;
+                        letter-spacing: 0.4px;
+                        margin-bottom: 0.5rem;
+                    }
+                    .input,
+                    .textarea {
+                        width: 100%;
+                        min-width: 22rem;
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        padding: 0 1rem;
+                        @include text(var(--small-fs), msr, var(--small-lh), var(--text-cl), none);
+                        @include transition($t $cubic);
+                    }
+                    .textarea {
+                        resize: none;
+                    }
+                    &-input {
+                        .input {
+                            border-bottom: 1px solid var(--title-cl);
+                        }
+                    }
+                    &-message {
+                        position: relative;
+                        height: fit-content;
+                        &::before,
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            height: 1px;
+                            background-color: var(--title-cl);
+                            z-index: -1;
+                            @include transition($t $cubic);
+                        }
+                        &::before {
+                            bottom: 2.5rem;
+                        }
+                        &::after {
+                            bottom: 4.5rem;
+                        }
+                        .textarea {
+                            height: 6rem;
+                            border-bottom: 1px solid var(--title-cl);
+                        }
+                    }
+                }
+                &__message {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    @include transition($t $cubic);
+                }
+                &__submit {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    outline: none;
+                    border: 1px solid var(--title-cl);
+                    background-color: var(--container-cl);
+                    padding: 0.125rem 1rem;
+                    @include text(var(--small-fs), mssb, var(--small-lh), var(--text-cl), capitalize);
+                    @include transition($t $cubic);
+                }
+            }
+        }
+    }
+    @include sm {
+        &__wrapper {
+            flex-direction: column;
+            padding: 4rem 2rem 16rem;
+            &-left{
+                display: none;
+            }
+            &-right {
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

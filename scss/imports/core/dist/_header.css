@@ -1,0 +1,10 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--container-cl);
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+/*# sourceMappingURL=_header.css.map */

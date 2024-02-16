@@ -15,7 +15,14 @@ img {
 a {
     text-decoration: none;
 }
-
+h1,
+h2,
+h3,
+h4 {
+    font-family: mssb;
+    color: var(--title-cl);
+    line-height: var(--h2-lh);
+}
 // colors (tuỳ chỉnh)
 .--white-cl {
     color: $white-cl;
@@ -26,4 +33,97 @@ a {
 .--blue-cl {
     color: $blue-cl;
 }
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
 
+.title {
+    @include text(var(--h2-fs), mssb, 3rem, var(--title-cl), uppercase);
+    width: max-content;
+    margin-bottom: 2.5rem;
+    border-bottom: 2px solid var(--title-cl);
+    padding-bottom: 0.5rem;
+    @include transition($t $cubic);
+}
+.subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    @include text(var(--normal-fs), mssb, 2rem, var(--title-cl), none);
+    width: max-content;
+    @include transition($t $cubic);
+    &__icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        path {
+            fill: var(--title-cl);
+            @include transition($t $cubic);
+        }
+    }
+}
+.wrapper {
+    padding: 2rem;
+}
+.button {
+    width: max-content;
+    color: var(--title-cl);
+    font-size: var(--small-fs);
+    font-family: mssb;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    @include transition($t $cubic);
+    &__icon {
+        width: 1.4rem;
+        height: 1.4rem;
+        path {
+            fill: var(--title-cl);
+            @include transition($t $cubic);
+        }
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.data {
+    display: grid;
+    gap: .75rem;
+    padding: 1rem 2rem;
+}
+.link {
+    @include text(var(--small-fs), mssb, var(--small-lh), var(--title-cl), none);
+    letter-spacing: 0;
+    @include transition($t $cubic);
+}
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: 7rem;
+    background-color: var(--container-cl);
+    box-shadow: 0 0.4rem 1.6rem hlsa(40, 48%, 4%, 0.15);
+    display: inline-flex;
+    padding: 0.6rem;
+    font-size: 1.25rem;
+    color: var(--title-cl);
+    border-radius: 0.25rem;
+    z-index: var(--z-tooltip);
+    @include transition($t $cubic);
+    &__icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        path {
+            fill: var(--title-cl);
+            @include transition($t $cubic);
+        }
+    }
+    &:hover {
+        @include transform(translateY(-0.25rem));
+    }
+}
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-cl);
+    cursor: pointer;
+    @include transition($t $cubic);
+}

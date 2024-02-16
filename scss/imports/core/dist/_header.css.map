@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_header.scss"],"sourcesContent":[".header{\r\n    position: fixed;\r\n    width: 100%;\r\n    background-color: var(--container-cl);\r\n    top: 0;\r\n    left: 0;\r\n    z-index: var(--z-fixed);\r\n}\r\n"],"file":"_header.css"}

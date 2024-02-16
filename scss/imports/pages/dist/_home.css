@@ -1,0 +1,59 @@
+.home__hero {
+  padding-top: 7.5rem;
+  text-align: center;
+  row-gap: 0;
+}
+
+.about__button {
+  width: max-content;
+  color: var(--title-cl);
+  font-size: var(--small-fs);
+  font-family: mssb;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.about__button-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.about__button-icon path {
+  fill: var(--text-cl);
+}
+
+.about__button:hover {
+  text-decoration: underline;
+}
+
+.about__social {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.about__social-link {
+  color: var(--title-cl);
+  font-family: mssb;
+  font-size: var(--small-fs);
+}
+
+.skills__list, .skills__content {
+  display: grid;
+}
+
+.skills__content {
+  grid-template-columns: repeat(2, max-content);
+  align-items: baseline;
+  column-gap: 3rem;
+}
+
+.skills__list {
+  row-gap: 1rem;
+}
+
+.skills__list li {
+  margin: 0;
+}
+
+/*# sourceMappingURL=_home.css.map */
