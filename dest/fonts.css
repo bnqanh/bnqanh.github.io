@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'msm';
-    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
-        url('../fonts/Montserrat-Medium.woff') format('woff');
+    src: url('./fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('./fonts/Montserrat-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: fallback;
@@ -13,8 +13,8 @@
 
 @font-face {
     font-family: 'msr';
-    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-        url('../fonts/Montserrat-Regular.woff') format('woff');
+    src: url('./fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('./fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: fallback;
@@ -22,8 +22,8 @@
 
 @font-face {
     font-family: 'mssb';
-    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
-        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    src: url('./fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('./fonts/Montserrat-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: fallback;
